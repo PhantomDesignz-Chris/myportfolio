@@ -1,0 +1,62 @@
+.hero-container {
+  background: lightblue;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  object-fit: contain;
+  text-align: center;
+}
+
+.hero-container > h1 {
+  margin-top:150px;
+  font-size: 80px;
+  text-align:center;
+}
+
+.hero-container > p {
+  margin-top:20px;
+  text-align:center;
+}
+
+.hero-btns {
+  margin-top: 50px;
+}
+
+.hero-btns .btn {
+  margin: 6px;
+}
+
+@media screen and (max-width: 960px) {
+  .hero-container > h1 {
+    font-size: 70px;
+    margin-top: 100px;
+  }
+
+  .hero-container > p {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container > h1 {
+    font-size: 50px;
+    margin-top: 50px;
+  }
+
+  .hero-container > p {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .hero-container .btn {
+    width: 50%;
+  }
+}
